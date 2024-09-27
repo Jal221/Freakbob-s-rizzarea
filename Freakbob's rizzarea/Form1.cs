@@ -60,20 +60,49 @@ namespace Freakbob_s_rizzarea
 
                 TaxText.Text = $"{tax.ToString("C")}";
 
-                TaxText.Text = $"{tax.ToString("C")}";
+                TotalText.Text = $"{total.ToString("C")}";
 
-
-
-
-
-
+                CalulateButton.Enabled = true;
 
             }
 
             catch
             {
+                errorOutput.Text = "Error Error Error Error Error Error Input Number";
+                errorOutput.Visible = true;
+
 
             }
+
+
+
+        }
+
+        private void CalulateButton_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                errorOutput.Text = "";
+                errorOutput.Visible = false;
+                tendred = Convert.ToDouble(tendredInput);
+
+                change = tendred - total;
+                ChangeLabel.Text = $"{change.ToString("C")}";
+
+                printRecepit.Enabled = true;
+
+
+            }
+            catch 
+            {
+                errorOutput.Text = "Error Error Error Error Error Error Input Number";
+                errorOutput.Visible = true;
+            }
+        }
+
+        private void printRecepit_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
