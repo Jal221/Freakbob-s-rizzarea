@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Threading;
 
 namespace Freakbob_s_rizzarea
 {
@@ -26,6 +27,8 @@ namespace Freakbob_s_rizzarea
         double skibidiSlicersVari;
         double geekedBajaBlastVari;
         double nettspendNuggetsVari;
+        double order;
+        
 
         
 
@@ -62,6 +65,8 @@ namespace Freakbob_s_rizzarea
 
                 TotalText.Text = $"{total.ToString("C")}";
 
+               
+
                 CalulateButton.Enabled = true;
 
             }
@@ -95,13 +100,64 @@ namespace Freakbob_s_rizzarea
             }
             catch 
             {
-                errorOutput.Text = "Error Error Error Error Error Error Input Number";
-                errorOutput.Visible = true;
+                
             }
         }
 
         private void printRecepit_Click(object sender, EventArgs e)
         {
+            order = (Convert.ToDouble(orderNameText));
+
+            skibidiSlicersFInal.Text = $"X{skibidiSlicersNumber} = {skibidiSlicersVari.ToString("C")}";
+            skibidiSlicersFInal.Visible = true;
+            skibidiSlicers1.Visible = true;
+
+            Thread.Sleep(1000);
+
+
+            geekedBajaBlastFinal.Text = $"X{geekedBajaBlastNumber} = {geekedBajaBlastVari.ToString("C")}";
+            geekedBajaBlastFinal.Visible = true;
+            geekedBajaBlast1.Visible = true;
+
+            Thread.Sleep(1000);
+
+            nettspendNuggetsFinal.Text = $"X{nettspendNuggetsNumber} = {nettspendNuggetsVari.ToString("C")}";
+            nettspendNuggetsFinal.Visible = true;
+            nettspendNuggets1.Visible = true;
+
+            Thread.Sleep(1000);
+
+            subTotal1.Visible = true;
+            subTotalFinal.Visible = true;
+            subTotalFinal.Text = $"{subtotal.ToString("C")}";
+
+            Thread.Sleep(1000);
+
+            tax1.Visible = true;
+            taxFinal.Visible = true;    
+            taxFinal.Text = $"{tax.ToString("C")}";
+
+            Thread.Sleep(1000);
+
+            totalFinal.Visible = true;
+            total1.Visible = true;
+            totalFinal.Text = $"{total.ToString("C")}";
+
+            Thread.Sleep(1000);
+
+            tendredFinal.Text = $"{tendred.ToString("C")}";
+            tendredFinal.Visible = true;
+            tendred1.Visible = true;
+
+
+
+
+
+
+
+
+
+
 
         }
     }

@@ -65,6 +65,10 @@
             this.changeFinal = new System.Windows.Forms.Label();
             this.change1 = new System.Windows.Forms.Label();
             this.tendredFinal = new System.Windows.Forms.Label();
+            this.orderNumberText = new System.Windows.Forms.Label();
+            this.orderNameText = new System.Windows.Forms.Label();
+            this.orderName = new System.Windows.Forms.Label();
+            this.orderNunber = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // NewOrder
@@ -275,8 +279,9 @@
             // 
             this.skibidiSlicers1.AutoSize = true;
             this.skibidiSlicers1.BackColor = System.Drawing.Color.Purple;
+            this.skibidiSlicers1.Enabled = false;
             this.skibidiSlicers1.ForeColor = System.Drawing.Color.Yellow;
-            this.skibidiSlicers1.Location = new System.Drawing.Point(450, 71);
+            this.skibidiSlicers1.Location = new System.Drawing.Point(450, 31);
             this.skibidiSlicers1.Name = "skibidiSlicers1";
             this.skibidiSlicers1.Size = new System.Drawing.Size(92, 16);
             this.skibidiSlicers1.TabIndex = 44;
@@ -285,8 +290,9 @@
             // nettspendNuggets1
             // 
             this.nettspendNuggets1.AutoSize = true;
+            this.nettspendNuggets1.Enabled = false;
             this.nettspendNuggets1.ForeColor = System.Drawing.Color.Yellow;
-            this.nettspendNuggets1.Location = new System.Drawing.Point(450, 140);
+            this.nettspendNuggets1.Location = new System.Drawing.Point(450, 100);
             this.nettspendNuggets1.Name = "nettspendNuggets1";
             this.nettspendNuggets1.Size = new System.Drawing.Size(123, 16);
             this.nettspendNuggets1.TabIndex = 43;
@@ -295,8 +301,9 @@
             // geekedBajaBlast1
             // 
             this.geekedBajaBlast1.AutoSize = true;
+            this.geekedBajaBlast1.Enabled = false;
             this.geekedBajaBlast1.ForeColor = System.Drawing.Color.Yellow;
-            this.geekedBajaBlast1.Location = new System.Drawing.Point(447, 106);
+            this.geekedBajaBlast1.Location = new System.Drawing.Point(447, 66);
             this.geekedBajaBlast1.Name = "geekedBajaBlast1";
             this.geekedBajaBlast1.Size = new System.Drawing.Size(120, 16);
             this.geekedBajaBlast1.TabIndex = 42;
@@ -305,7 +312,8 @@
             // skibidiSlicersFInal
             // 
             this.skibidiSlicersFInal.AutoSize = true;
-            this.skibidiSlicersFInal.Location = new System.Drawing.Point(591, 71);
+            this.skibidiSlicersFInal.Enabled = false;
+            this.skibidiSlicersFInal.Location = new System.Drawing.Point(591, 31);
             this.skibidiSlicersFInal.Name = "skibidiSlicersFInal";
             this.skibidiSlicersFInal.Size = new System.Drawing.Size(0, 16);
             this.skibidiSlicersFInal.TabIndex = 45;
@@ -313,7 +321,8 @@
             // geekedBajaBlastFinal
             // 
             this.geekedBajaBlastFinal.AutoSize = true;
-            this.geekedBajaBlastFinal.Location = new System.Drawing.Point(591, 106);
+            this.geekedBajaBlastFinal.Enabled = false;
+            this.geekedBajaBlastFinal.Location = new System.Drawing.Point(591, 66);
             this.geekedBajaBlastFinal.Name = "geekedBajaBlastFinal";
             this.geekedBajaBlastFinal.Size = new System.Drawing.Size(0, 16);
             this.geekedBajaBlastFinal.TabIndex = 46;
@@ -321,7 +330,8 @@
             // nettspendNuggetsFinal
             // 
             this.nettspendNuggetsFinal.AutoSize = true;
-            this.nettspendNuggetsFinal.Location = new System.Drawing.Point(591, 140);
+            this.nettspendNuggetsFinal.Enabled = false;
+            this.nettspendNuggetsFinal.Location = new System.Drawing.Point(591, 100);
             this.nettspendNuggetsFinal.Name = "nettspendNuggetsFinal";
             this.nettspendNuggetsFinal.Size = new System.Drawing.Size(0, 16);
             this.nettspendNuggetsFinal.TabIndex = 47;
@@ -330,8 +340,9 @@
             // 
             this.total1.AutoSize = true;
             this.total1.BackColor = System.Drawing.Color.Purple;
+            this.total1.Enabled = false;
             this.total1.ForeColor = System.Drawing.Color.Yellow;
-            this.total1.Location = new System.Drawing.Point(450, 294);
+            this.total1.Location = new System.Drawing.Point(454, 187);
             this.total1.Name = "total1";
             this.total1.Size = new System.Drawing.Size(38, 16);
             this.total1.TabIndex = 50;
@@ -341,8 +352,9 @@
             // 
             this.subTotal1.AutoSize = true;
             this.subTotal1.BackColor = System.Drawing.Color.Purple;
+            this.subTotal1.Enabled = false;
             this.subTotal1.ForeColor = System.Drawing.Color.Yellow;
-            this.subTotal1.Location = new System.Drawing.Point(447, 236);
+            this.subTotal1.Location = new System.Drawing.Point(451, 129);
             this.subTotal1.Name = "subTotal1";
             this.subTotal1.Size = new System.Drawing.Size(65, 16);
             this.subTotal1.TabIndex = 49;
@@ -352,8 +364,9 @@
             // 
             this.tax1.AutoSize = true;
             this.tax1.BackColor = System.Drawing.Color.Purple;
+            this.tax1.Enabled = false;
             this.tax1.ForeColor = System.Drawing.Color.Yellow;
-            this.tax1.Location = new System.Drawing.Point(450, 264);
+            this.tax1.Location = new System.Drawing.Point(454, 157);
             this.tax1.Name = "tax1";
             this.tax1.Size = new System.Drawing.Size(30, 16);
             this.tax1.TabIndex = 48;
@@ -362,7 +375,8 @@
             // totalFinal
             // 
             this.totalFinal.AutoSize = true;
-            this.totalFinal.Location = new System.Drawing.Point(542, 294);
+            this.totalFinal.Enabled = false;
+            this.totalFinal.Location = new System.Drawing.Point(546, 187);
             this.totalFinal.Name = "totalFinal";
             this.totalFinal.Size = new System.Drawing.Size(0, 16);
             this.totalFinal.TabIndex = 53;
@@ -370,7 +384,8 @@
             // taxFinal
             // 
             this.taxFinal.AutoSize = true;
-            this.taxFinal.Location = new System.Drawing.Point(542, 264);
+            this.taxFinal.Enabled = false;
+            this.taxFinal.Location = new System.Drawing.Point(546, 157);
             this.taxFinal.Name = "taxFinal";
             this.taxFinal.Size = new System.Drawing.Size(0, 16);
             this.taxFinal.TabIndex = 52;
@@ -378,7 +393,8 @@
             // subTotalFinal
             // 
             this.subTotalFinal.AutoSize = true;
-            this.subTotalFinal.Location = new System.Drawing.Point(542, 236);
+            this.subTotalFinal.Enabled = false;
+            this.subTotalFinal.Location = new System.Drawing.Point(546, 129);
             this.subTotalFinal.Name = "subTotalFinal";
             this.subTotalFinal.Size = new System.Drawing.Size(0, 16);
             this.subTotalFinal.TabIndex = 51;
@@ -387,8 +403,9 @@
             // 
             this.tendred1.AutoSize = true;
             this.tendred1.BackColor = System.Drawing.Color.Purple;
+            this.tendred1.Enabled = false;
             this.tendred1.ForeColor = System.Drawing.Color.Yellow;
-            this.tendred1.Location = new System.Drawing.Point(450, 338);
+            this.tendred1.Location = new System.Drawing.Point(454, 231);
             this.tendred1.Name = "tendred1";
             this.tendred1.Size = new System.Drawing.Size(53, 16);
             this.tendred1.TabIndex = 54;
@@ -397,7 +414,8 @@
             // changeFinal
             // 
             this.changeFinal.AutoSize = true;
-            this.changeFinal.Location = new System.Drawing.Point(529, 368);
+            this.changeFinal.Enabled = false;
+            this.changeFinal.Location = new System.Drawing.Point(533, 261);
             this.changeFinal.Name = "changeFinal";
             this.changeFinal.Size = new System.Drawing.Size(0, 16);
             this.changeFinal.TabIndex = 56;
@@ -406,8 +424,9 @@
             // 
             this.change1.AutoSize = true;
             this.change1.BackColor = System.Drawing.Color.Purple;
+            this.change1.Enabled = false;
             this.change1.ForeColor = System.Drawing.Color.Yellow;
-            this.change1.Location = new System.Drawing.Point(450, 368);
+            this.change1.Location = new System.Drawing.Point(454, 261);
             this.change1.Name = "change1";
             this.change1.Size = new System.Drawing.Size(52, 16);
             this.change1.TabIndex = 55;
@@ -416,10 +435,53 @@
             // tendredFinal
             // 
             this.tendredFinal.AutoSize = true;
-            this.tendredFinal.Location = new System.Drawing.Point(529, 338);
+            this.tendredFinal.Enabled = false;
+            this.tendredFinal.Location = new System.Drawing.Point(533, 231);
             this.tendredFinal.Name = "tendredFinal";
             this.tendredFinal.Size = new System.Drawing.Size(0, 16);
             this.tendredFinal.TabIndex = 57;
+            // 
+            // orderNumberText
+            // 
+            this.orderNumberText.AutoSize = true;
+            this.orderNumberText.Enabled = false;
+            this.orderNumberText.Location = new System.Drawing.Point(591, 306);
+            this.orderNumberText.Name = "orderNumberText";
+            this.orderNumberText.Size = new System.Drawing.Size(0, 16);
+            this.orderNumberText.TabIndex = 61;
+            // 
+            // orderNameText
+            // 
+            this.orderNameText.AutoSize = true;
+            this.orderNameText.Enabled = false;
+            this.orderNameText.Location = new System.Drawing.Point(591, 336);
+            this.orderNameText.Name = "orderNameText";
+            this.orderNameText.Size = new System.Drawing.Size(0, 16);
+            this.orderNameText.TabIndex = 60;
+            // 
+            // orderName
+            // 
+            this.orderName.AutoSize = true;
+            this.orderName.BackColor = System.Drawing.Color.Purple;
+            this.orderName.Enabled = false;
+            this.orderName.ForeColor = System.Drawing.Color.Yellow;
+            this.orderName.Location = new System.Drawing.Point(454, 336);
+            this.orderName.Name = "orderName";
+            this.orderName.Size = new System.Drawing.Size(81, 16);
+            this.orderName.TabIndex = 59;
+            this.orderName.Text = "Order Name";
+            // 
+            // orderNunber
+            // 
+            this.orderNunber.AutoSize = true;
+            this.orderNunber.BackColor = System.Drawing.Color.Purple;
+            this.orderNunber.Enabled = false;
+            this.orderNunber.ForeColor = System.Drawing.Color.Yellow;
+            this.orderNunber.Location = new System.Drawing.Point(454, 306);
+            this.orderNunber.Name = "orderNunber";
+            this.orderNunber.Size = new System.Drawing.Size(92, 16);
+            this.orderNunber.TabIndex = 58;
+            this.orderNunber.Text = "Order Number";
             // 
             // form1
             // 
@@ -427,6 +489,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Purple;
             this.ClientSize = new System.Drawing.Size(800, 506);
+            this.Controls.Add(this.orderNumberText);
+            this.Controls.Add(this.orderNameText);
+            this.Controls.Add(this.orderName);
+            this.Controls.Add(this.orderNunber);
             this.Controls.Add(this.tendredFinal);
             this.Controls.Add(this.changeFinal);
             this.Controls.Add(this.change1);
@@ -510,6 +576,10 @@
         private System.Windows.Forms.Label changeFinal;
         private System.Windows.Forms.Label change1;
         private System.Windows.Forms.Label tendredFinal;
+        private System.Windows.Forms.Label orderNumberText;
+        private System.Windows.Forms.Label orderNameText;
+        private System.Windows.Forms.Label orderName;
+        private System.Windows.Forms.Label orderNunber;
     }
 }
 
